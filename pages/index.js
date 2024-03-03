@@ -1,5 +1,11 @@
+import Header from "@/components/layouts/Header.jsx";
 import Page from ".././pages/page.jsx";
 
 export default function Home() {
-  return <Page />;
+  return (
+    <>
+      <Header />
+      <Page />
+    </>
+  );
 }

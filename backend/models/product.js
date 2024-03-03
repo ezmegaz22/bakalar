@@ -3,15 +3,15 @@ import mongoose from "mongoose";
 const productSchema = new mongoose.Schema({
   name: {
     type: String,
-    require: [true, "Please enter a product name"],
+    required: [true, "Please enter a product name"],
   },
   description: {
     type: String,
-    require: [true, "Please enter a product description"],
+    required: [true, "Please enter a product description"],
   },
   price: {
     type: Number,
-    require: [true, "Please enter a product price"],
+    required: [true, "Please enter a product price"],
   },
   image: [
     {
@@ -26,7 +26,7 @@ const productSchema = new mongoose.Schema({
 
   category: {
     type: String,
-    require: [true, "Please enter a category name"],
+    required: [true, "Please enter a category name"],
     enum: {
       values: ["Electronics", "Laptops", "Headphones"],
       message: "Please select a correct category",
@@ -34,11 +34,11 @@ const productSchema = new mongoose.Schema({
   },
   seller: {
     type: String,
-    require: [true, "Please enter a product seller"],
+    required: [true, "Please enter a product seller"],
   },
   stock: {
     type: Number,
-    require: [true, "Please enter a product stock"],
+    required: [true, "Please enter a product stock"],
   },
   ratings: {
     type: Number,
@@ -48,11 +48,11 @@ const productSchema = new mongoose.Schema({
     {
       rating: {
         type: Number,
-        require: true,
+        required: true,
       },
       comment: {
         type: String,
-        require: true,
+        required: true,
       },
       createdAt: {
         type: Date,

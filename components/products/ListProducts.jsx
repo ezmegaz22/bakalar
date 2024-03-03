@@ -12,7 +12,7 @@ const ListProducts = ({ data }) => {
           <Filters />
 
           <main className="md:w-2/3 lg:w-3/4 px-3">
-            {data?.products?.map((product) => (
+            {data?.map((product) => (
               <ProductItem key={product?._id} product={product} />
             ))}
           </main>

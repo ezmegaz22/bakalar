@@ -26,7 +26,7 @@ const Filters = () => {
         Filter by
       </a>
       <div className="hidden md:block px-6 py-4 border border-gray-200 bg-white rounded shadow-sm">
-        <h3 className="font-semibold mb-2">Price ($)</h3>
+        <h3 className="font-semibold mb-2">Ár (€)</h3>
         <div className="grid md:grid-cols-3 gap-x-2">
           <div className="mb-4">
             <input
@@ -48,14 +48,14 @@ const Filters = () => {
 
           <div className="mb-4">
             <button className="px-1 py-2 text-center w-full inline-block text-white bg-blue-600 border border-transparent rounded-md hover:bg-blue-700">
-              Go
+              Keresés
             </button>
           </div>
         </div>
       </div>
 
       <div className="hidden md:block px-6 py-4 border border-gray-200 bg-white rounded shadow-sm">
-        <h3 className="font-semibold mb-2">Category</h3>
+        <h3 className="font-semibold mb-2">Kategória</h3>
 
         <ul className="space-y-1">
           <li>
@@ -67,7 +67,7 @@ const Filters = () => {
                 className="h-4 w-4"
                 defaultChecked={checkHandler("category", "Electronics")}
               />
-              <span className="ml-2 text-gray-500"> Electronics </span>
+              <span className="ml-2 text-gray-500"> Elektronika </span>
             </label>
           </li>
           <li>
@@ -79,7 +79,7 @@ const Filters = () => {
                 className="h-4 w-4"
                 defaultChecked={checkHandler("category", "Laptops")}
               />
-              <span className="ml-2 text-gray-500"> Laptops </span>
+              <span className="ml-2 text-gray-500"> Laptop </span>
             </label>
           </li>
           <li>
@@ -91,12 +91,12 @@ const Filters = () => {
                 className="h-4 w-4"
                 defaultChecked={checkHandler("category", "Headphone")}
               />
-              <span className="ml-2 text-gray-500"> Headphone </span>
+              <span className="ml-2 text-gray-500"> Fejhallgató </span>
             </label>
           </li>
         </ul>
         <hr className="my-4" />
-        <h3 className="font-semibold mb-2">Ratings</h3>
+        <h3 className="font-semibold mb-2">Értékelések</h3>
         <ul className="space-y-1">
           <li>
             {[5, 4, 3, 2, 1].map((rating) => (
